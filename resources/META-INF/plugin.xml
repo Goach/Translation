@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>com.goach.plugin.translation</id>
+  <name>Translation</name>
+  <version>1.0</version>
+  <vendor email="291612926@qq.com" url="https://github.com/Goach">Goach.Zhong</vendor>
+
+  <description><![CDATA[可以一键生成多种语言写入到 string 文件里面，暂时包括包括中文，英文，越南语，马来文]]></description>
+
+  <change-notes>这是简单的第一个版本，一个 key 然后需要手动配置中文，英文，越南文，马来文，</change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Translation.LanguageAction" class="main.java.TranslationLanguageAction" text="多语言配置" description="请配置以下语言">
+      <add-to-group group-id="CodeMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
