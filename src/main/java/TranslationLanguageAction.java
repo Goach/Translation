@@ -31,11 +31,11 @@ public class TranslationLanguageAction extends AnAction {
         if (stringEn == null || stringEn.isEmpty()) {
             return;
         }
-        String stringVn = Messages.showInputDialog(project, "输入马来语", "马来", Messages.getQuestionIcon());
+        String stringVn = Messages.showInputDialog(project, "输入越南语", "越南语", Messages.getQuestionIcon());
         if (stringVn == null || stringVn.isEmpty()) {
             return;
         }
-        String stringMy = Messages.showInputDialog(project, "输入越南语", "越南语", Messages.getQuestionIcon());
+        String stringMy = Messages.showInputDialog(project, "输入马来语", "马来语", Messages.getQuestionIcon());
         if (stringMy == null || stringMy.isEmpty()) {
             return;
         }
